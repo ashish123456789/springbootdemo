@@ -4,7 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import com.example.demo.model.Employee;
 
-import java.util.Optional;
 
 import javax.persistence.Id;
 
@@ -14,4 +13,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface EmployeeRepository extends JpaRepository<Employee, Id> {
 
  Employee findById(int id);
+ 
+
 }

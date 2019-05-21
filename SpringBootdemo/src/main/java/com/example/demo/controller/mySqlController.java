@@ -51,6 +51,13 @@ public class mySqlController {
 		return empRepo.findById(id);
 		
 	}
+	
+//	@GetMapping("/findbyname/{name}")
+//	private List<Employee> findByName(@PathVariable (value = "name") String name){
+//		
+//		return empRepo.getFirstNamesLike(name);
+//		
+//	}
 		
 	@GetMapping("/delete/{id}")
 	private Employee deleteEmp(@PathVariable (value = "id") int id) {
